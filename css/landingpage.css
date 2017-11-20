@@ -6,3 +6,17 @@
 .bg-pastel {
 	background-color: #D7DBDD;
 }
+.container {
+	text-align: center;
+}
+.mainheader {
+	color: #262626;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 32px;
+	font-weight: bold;
+}
+.mainbody {
+	color: #4d4d4d;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 20px;
+}
