@@ -1,26 +1,22 @@
 body {
 	color: #665544;
-	background-color: #8ec3eb;
-	font-family: Georgia, "Times New Roman", serif;
+	background-color: #fefbd8;
+	background-image: url("images/semi-transparent-background.png");
+	font-family: normal normal 300 normal 14px / 20px "Open Sans", sans-serif;
 	text-align: center;
 }
-
 .wrapper {
-	width: 720px;
+	width: 850px;
 	margin: 0px auto;
 }
-
 .header {
-	margin: 40px 0px 20px 0px;
+margin: 40px 0px 20px 0px;
+padding-left: : 20px
+}
+.card {
+	float: left;
+	background-image: url("images/shadow.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
-
-.angler img {
-    height:250px;
-    width:350%;
-}
-
-.theconnaught img {
-	height:250px;
-    width:350%;
-}
