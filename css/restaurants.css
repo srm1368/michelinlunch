@@ -1,7 +1,7 @@
 body {
 	color: #665544;
 	background-color: #fefbd8;
-	background-image: url("images/semi-transparent-background.png");
+	background-image: url("../images/semi-transparent-background.png");
 	font-family: normal normal 300 normal 14px / 20px "Open Sans", sans-serif;
 	text-align: center;
 }
@@ -19,4 +19,3 @@ padding-left: : 20px
 	background-repeat: no-repeat;
 	background-position: bottom;
 }
-
