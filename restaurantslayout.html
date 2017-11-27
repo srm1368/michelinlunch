@@ -2,124 +2,248 @@
 <html>
 <head>
 <title>Images</title>
+<link rel="stylesheet" href="css/restaurants.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	
-	<style type="text/css">
-		body {
-		color: #665544;
-		background-color: #fefbd8;
-		background-image: url("images/semi-transparent-background.png");
-		font-family: Georgia, "Times New Roman", serif;
-		text-align: center;}
-		.wrapper {
-		width: 720px;
-		margin: 0px auto;}
-		.header {
-		margin: 40px 0px 20px 0px;}
-		.entry {
-		width: 220px;
-		float: left;
-		margin: 10px;
-		height: 198px;
-		background-image: url("images/shadow.png");
-		background-repeat: no-repeat;
-		background-position: bottom;}
-		figure {
-		display: block;
-		width: 202px;
-		height: 170px;
-		background-color: #e7e3d8;
-		padding: 9px;
-		text-align: left;}
-		figure img {
-		width: 200px;
-		height: 150px;
-		border: 1px solid #d6d6d6;}
-		figcaption {
-		background-image: url("images/icon.png");
-		padding-left: 20px;
-		background-repeat: no-repeat;}
-	</style>
 
 </head>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<a class="navbar-brand" href="./index.html">Yellow</a>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="./html3.html">Reading</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchenter">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchbutton">Search</button>
+    		</form>
+  		</div>
+	</nav>
 
 <body>
 	<div class="wrapper">
 	<div class="header">
 	<img src="images/skyline.jpg" alt="Skyline" width="912" height="244" class="text-center" class="rounded-circle"/>
-	<p><b>Here is a selection of the Michelin Set Lunch Restaurants near King's College London.</b></p>
-
-</div>
+	<p><b>A selection of the Michelin Set Lunch Restaurants near King's College London.</b></p>
+	</div>	
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/angler.jpg" alt="Angler" />
-					<figcaption>Angler</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/angler.jpg">
+						<h4 class="card-title text-center">Angler</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="http://www.anglerrestaurant.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/AnglerRestaurantLondon/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/joelrobuchon.jpg" alt="Joel Robuchon" />
-					<figcaption>L'Atelier de Joel Robuchon</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/joelrobuchon.jpg">
+						<h4 class="card-title text-center">L'Atelier de Joel Robuchon</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://joelrobuchon.co.uk/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/latelierlondon/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-4">	
-				<div class="entry">
-					<figure><img src="images/ledbury.jpg" alt="Ledbury" />
-					<figcaption>The Ledbury</figcaption>
-					</figure>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/ledbury.jpg">
+						<h4 class="card-title text-center">The Ledbury</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="http://www.theledbury.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/pages/The-Ledbury/111109435606358"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/marcusrestaurant.jpg" alt="Marcus" />
-					<figcaption>Marcus</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/marcusrestaurant.jpg">
+						<h4 class="card-title text-center">Marcus</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://www.marcusrestaurant.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/MarcusBelgravia/?rf=173541006086797"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/stjohngroup.jpg" alt="stjohngroup" />
-					<figcaption>St John</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/stjohngroup.jpg">
+						<h4 class="card-title text-center">St John</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://www.stjohngroup.uk.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/StJOHNRestaurant/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/theconnaught.jpg" alt="theconnaught" />
-					<figcaption>Helene Darroze at The Connaught </figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/theconnaught.jpg">
+						<h4 class="card-title text-center">Helene Darroze at The Connaught</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://www.the-connaught.co.uk/restaurants-bars/helene-darroze-at-the-connaught/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/pages/Helene-Darroze-At-The-Connaught/141956985847802"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/galvinrestaurant.jpg" alt="galvinrestaurant" />
-					<figcaption>Galvin La Chapelle</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/galvinrestaurant.jpg">
+						<h4 class="card-title text-center">Galvin La Chapelle</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://www.galvinrestaurants.com/s/61/galvin-la-chapelle"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/galvinlachapelle/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/lylesshoreditch.jpg" alt="lylesshoreditch" />
-					<figcaption>Lyle's Shoreditch</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/lylesshoreditch.jpg">
+						<h4 class="card-title text-center">Lyle's Shoreditch</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://www.lyleslondon.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/lyleslondon/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="entry">
-					<figure><img src="images/thecloveclub.jpg" alt="thecloveclub" />
-					<figcaption>The Clove Club</figcaption>
-					</figure>
+				<div class="card">
+					<div class="card-block">
+						<img alt="Card image cap" class="card-img-top img-fluid" src="images/thecloveclub.jpg">
+						<h4 class="card-title text-center">The Clove Club</h4>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">Cuisine</li>
+							<li class="list-group-item">Price class</li>
+							<li class="list-group-item">Address</li>
+							<li class="list-group-item">Opening hours</li>
+						</ul>
+						<div class="card-footer">
+							<a>
+								<i class="fa fa-link" src="https://thecloveclub.com/"></i>
+							</a>
+							<a>
+								<i class="fa fa-facebook-square" src="https://www.facebook.com/thecloveclub/"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
