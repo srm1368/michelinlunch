@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="./js/contact.js"></script>
 		<link rel="stylesheet" href="./css/contact.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -23,9 +24,9 @@
 			  <ul>
 				<li><a href="./index.html">Home</a></li>
 				<li><a href="">About</a></li>
-				<li><a href="./restaurantslayout.html">Restaurants</a></li>
+				<li><a href="./restaurants.html">Restaurants</a></li>
 				<li><a href="./map.html">Map</a></li>
-				<li><a href="./contactform.html">Contact</a></li>
+				<li><a href="./contact.html">Contact</a></li>
 				</ul>
 			</div>
 		</header>
@@ -106,6 +107,7 @@
 					<textarea rows="4" cols="40" id="comments">
 					</textarea>
 				</p>
+				<p>
 					<label>
 					<input type="checkbox" name="subscribe" checked="checked"/>
 					Sign me up for email updates
@@ -113,8 +115,10 @@
 					<br>
 					<br>
 					<input type="submit" value="Submit review"/>
-					<br>
-					<br>
+					<div class="popup" onclick="myFunction()"><b>Click me!</b>
+						<span class="popuptext" id="myPopup">Thanks for visitng us!</span>
+					</div>
+				</p>
 			</fieldset>
 			<br>
 		</form>
