@@ -1,98 +1,74 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="stylesheet" href="./css/contact.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="./css/contact.css">
 
-
-		<title>Forms</title>
-		<style type="text/css">
-fieldset legend {
-    background: 	#F4A460;
-    color: #fff;
-    padding: 5px 10px ;
-    font-size: 16px;
-    border-radius: 2.5px;
-    box-shadow: 0 0 0 3px #FFA500;
-    margin-left: 10px;
-}
-fieldset
-{
-  background-color:#fefbd8;
-  max-width:500px;
-  padding:16px;	
-  border: 3px solid #FFA500
-}
-.legend
-{
-  margin-bottom:0px;
-  margin-left:16px;
-
-		</style>
+		<title>Contact</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-toggleable-md navbar-light bg-pastel">
-	  		<button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    	<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="nav navbar-nav">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="./restaurantslayout.html">Restaurants</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="./map.html">Map</a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="./contactform.html">Contact</a>
-			      </li>
-			    </ul>
-		  	 </div>
-		</nav>
+		<header>
+			<div class='container'>
+			  <div class='heading'>
+			  <div class='row'>
+			  	<div class='col-12'>
+			  	  <img class='img-responsive mx-auto d-block' src='./images/header.png' width=100% height=100%>
+			  	</div>
+			  </div>
+			<br>
+			<div class = "nav">
+			  <ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="./restaurantslayout.html">Restaurants</a></li>
+				<li><a href="./map.html">Map</a></li>
+				<li><a href="./contactform.html">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		<br>
 		<br>
 
 		<form action="http://www.example.com/review.php" method="get">
 			<fieldset>
 				<legend>
-				<b>Your Details:</b>
+				<b>Your Details</b>
 				</legend>
 				<label>
-					Name:
+					<br>
+					Name
 					<input type="text" name="name" size="30" maxlength="100">
 				</label>
-				<br />
-				<br />
+				<br>
+				<br>
 				<label>
-					Email:
+					Email
 					<input type="email" name="email" size="30" maxlength="100">
 				</label>
-				<br />
-				<br />
+				<br>
+				<br>
 				<label for="Address">
-					Address: (Optional)
+					Address (Optional)
 				</label>
 					<br />
 					<textarea rows="4" cols="40" id="Address">
 					</textarea>
-				<br />
-				<br />
+				<br>
+				<br>
 				<label>
-					Telephone Number: (Optional)
+					Telephone Number (Optional)
 					<input type="Telephone" name="Telephone" size="30" maxlength="100">
 				</label>
-				<br />
-				<br />
+				<br>
+				<br>
 				</fieldset>
-				<br />
+				<br>
 				<fieldset>
 				<legend>
-					<b>Your Review:</b>
+					<b>Your Review</b>
 				</legend>
 				<p>
 					<label for="hear-about">
@@ -110,15 +86,15 @@ fieldset
 					Would you visit again?
 					<br />
 					<label>
-					<input type="radio" name="rating" value="yes" />
+					<input type="radio" name="rating" value="yes"/>
 					Yes
 					</label>
 					<label>
-					<input type="radio" name="rating" value="no" />
+					<input type="radio" name="rating" value="no"/>
 					No
 					</label>
 					<label>
-					<input type="radio" name="rating" value="maybe" />
+					<input type="radio" name="rating" value="maybe"/>
 					Maybe
 					</label>
 				</p>
@@ -126,18 +102,21 @@ fieldset
 					<label for="comments">
 					Any other comments?
 					</label>
-					<br />
-					<textarea rows="4" cols="80" id="comments">
+					<br>
+					<textarea rows="4" cols="40" id="comments">
 					</textarea>
 				</p>
 					<label>
-					<input type="checkbox" name="subscribe" checked="checked" />
+					<input type="checkbox" name="subscribe" checked="checked"/>
 					Sign me up for email updates
 					</label>
-					<br />
-					<br />
-					<input type="submit" value="Submit review" />
+					<br>
+					<br>
+					<input type="submit" value="Submit review"/>
+					<br>
+					<br>
 			</fieldset>
+			<br>
 		</form>
 	</body>
 </html>

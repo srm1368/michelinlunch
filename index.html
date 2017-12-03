@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Michelin Star Restaurants in London</title>
+	 <script src="./js/index.js"></script>
     <link rel='stylesheet' type='text/css' href='./css/landingpage.css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -11,31 +12,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href='./css/bootstrap.css' rel='stylesheet'>
-
-	
 </head>
+
 <body>
 	<br>
-
-<header>
-	<div class='container'>
-	  <div class='heading'>
-	  <div class='row'>
-	  	<div class='col-12'>
-	  	  <img class='img-responsive mx-auto d-block' src='./images/header.png' width=100% height=100%>
-	  	</div>
-	  </div>
-	<br>
-	<div class = "nav">
-	  <ul>
-		<li><a href="./index.html">Home</a></li>
-		<li><a href="">About</a></li>
-		<li><a href="./restaurantslayout.html">Restaurants</a></li>
-		<li><a href="./map.html">Map</a></li>
-		<li><a href="./contactformv2.html">Contact</a></li>
-		</ul>
-	</div>
-</header>
+	<header>
+		<div class='container'>
+		  <div class='heading'>
+		  <div class='row'>
+		  	<div class='col-12'>
+		  	  <img class='img-responsive mx-auto d-block' src='./images/header.png' width=100% height=100%>
+		  	</div>
+		  </div>
+		<br>
+		<div class = "nav">
+		  <ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="./restaurantslayout.html">Restaurants</a></li>
+			<li><a href="./map.html">Map</a></li>
+			<li><a href="./contactform.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
 	<br>
 	<div class='body'>
 	  <div class='row'>
@@ -54,12 +53,15 @@
 	  </div>
 	</div>
 	</div>
+	<div class="popup" onclick="myFunction()">Click me
+		<span class="popuptext" id="myPopup">Thanks for visitng us!</span>
+	</div>
 <br>
 <br>
-<footer>
-&copy; 2017 MichLunchInc
-<img src="images/london skyline.jpg" alt="Skyline" width= 100%/>
-</footer>
+	<footer>
+	&copy; 2017 MichLunchInc
+	<img src="images/london skyline.jpg" alt="Skyline" width= 100%/>
+	</footer>
 <br>
 <br>
 
