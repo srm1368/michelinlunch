@@ -43,6 +43,7 @@ a {
 }
 
 footer {
+	width: 100%;
 	clear: both;
 	background-color: #FFDAB9;
 	opacity: 0.7;
